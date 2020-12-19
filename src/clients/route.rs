@@ -1,5 +1,6 @@
 use actix_web::{delete, get, post, put, web, HttpResponse, Responder};
 use serde_json::json;
+use crate::clients::Client;
 
 #[get("/clients")]
 async fn find_all() -> impl Responder {
